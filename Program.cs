@@ -14,6 +14,8 @@ class Program
         startup.ConfigureServices(services);
 
         var serviceProvider = services.BuildServiceProvider();
+
+
         var orderProcessor = serviceProvider.GetRequiredService<OrderProcessor>();
 
         // Use the components
