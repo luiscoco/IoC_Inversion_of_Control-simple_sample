@@ -6,6 +6,8 @@ class Program
     static void Main(string[] args)
     {
         var services = new ServiceCollection();
+
+        // Container setup (using built-in .NET Core DI container)
         var startup = new Startup();
 
         // Simulate ConfigureServices being called by the framework
